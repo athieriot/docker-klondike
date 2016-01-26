@@ -13,6 +13,6 @@ RUN wget https://github.com/themotleyfool/Klondike/releases/download/${KLONDIKE_
 
 EXPOSE 8080
 
-ADD Settings.config .
+COPY Settings.config .
 
 CMD ["mono", "./bin/Klondike.SelfHost.exe", "--interactive", "--port=8080"]
