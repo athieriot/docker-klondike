@@ -9,7 +9,7 @@ Docker container to run a Self Hosted version of [Klondike](https://github.com/t
         docker run -it -d \
                    -p 8080:8080 \
                    --name klondike
-                   athieriot/klondike
+                   athieriot/docker-klondike
 
 ## Persist Package directory
 
@@ -17,7 +17,7 @@ Docker container to run a Self Hosted version of [Klondike](https://github.com/t
                    -p 8080:8080 \
                    -v /path/to/packages/:/app/App_Data/Packages
                    --name klondike \
-                   athieriot/klondike
+                   athieriot/docker-klondike
 
 ## Override configuration            
 
@@ -26,4 +26,4 @@ Docker container to run a Self Hosted version of [Klondike](https://github.com/t
                    -v /path/to/Settings.config:/app/Settings.config \
                    -v /path/to/Web.config:/app/Web.config \
                    --name klondike \
-                   athieriot/klondike
+                   athieriot/docker-klondike
