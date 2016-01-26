@@ -4,7 +4,8 @@ ENV KLONDIKE_VERSION=v2.0.0
 ENV KLONDIKE_BUILD=2.0.0.26c3df25-build144
 
 RUN apt-get update && \
-    apt-get install wget unzip
+    apt-get install wget unzip && \
+    rm -rf /var/cache/apt/*
 
 WORKDIR /app
 
